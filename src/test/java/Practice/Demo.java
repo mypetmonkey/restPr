@@ -1,23 +1,19 @@
 package Practice;
 
-import org.hamcrest.Matchers;
-
+import static org.hamcrest.Matchers.*;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.*;
-
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
 import static io.restassured.module.jsv.JsonSchemaValidator.*;
 
 
 
 public class Demo {
+	@SuppressWarnings("unchecked")
 	@Test
 	public void test()
 	
@@ -42,7 +38,7 @@ public class Demo {
 		.assertThat()
 		.body(matchesJsonSchemaInClasspath("jsonschema.txt"))
 		.statusCode(201)
-		.time(Matchers.lessThan(6000l),TimeUnit.MILLISECONDS)
+		.time(lessThan(6000l),TimeUnit.MILLISECONDS)
 		.log().all();
 		
 		
@@ -55,6 +51,7 @@ public class Demo {
 		.then()
 		.assertThat()
 	    .body(matchesJsonSchemaInClasspath("jsonschema.txt"))
+	    .body("tourist_location",is(equalTo("Mumbai")))
 		.log().all();
 	 
 		

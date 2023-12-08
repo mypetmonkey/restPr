@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-18T22:29:42 IST" name="Default suite" finished-at="2023-09-18T22:29:44 IST" duration-ms="2408">
+  <suite started-at="2023-12-07T11:15:17 IST" name="Default suite" finished-at="2023-12-07T11:15:21 IST" duration-ms="3959">
     <groups>
     </groups>
-    <test started-at="2023-09-18T22:29:42 IST" name="Default test" finished-at="2023-09-18T22:29:44 IST" duration-ms="2408">
-      <class name="Practice.BodyValid">
-        <test-method signature="test()[pri:0, instance:Practice.BodyValid@10feca44]" started-at="2023-09-18T22:29:42 IST" name="test" finished-at="2023-09-18T22:29:44 IST" duration-ms="2347" status="PASS">
+    <test started-at="2023-12-07T11:15:17 IST" name="Default test" finished-at="2023-12-07T11:15:21 IST" duration-ms="3959">
+      <class name="uPractice.Extract_Response_Headers">
+        <test-method signature="test()[pri:0, instance:uPractice.Extract_Response_Headers@1cbb87f3]" started-at="2023-12-07T11:15:17 IST" name="test" finished-at="2023-12-07T11:15:21 IST" duration-ms="3911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- Practice.BodyValid -->
+      </class> <!-- uPractice.Extract_Response_Headers -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
