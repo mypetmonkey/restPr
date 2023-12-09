@@ -1,4 +1,4 @@
-package uPractice;
+package com.uPractice;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.config;

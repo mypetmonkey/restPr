@@ -1,4 +1,4 @@
-package uPractice;
+package com.uPractice;
 
 import static  org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;

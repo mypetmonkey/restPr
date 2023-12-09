@@ -1,4 +1,4 @@
-package uPractice;
+package com.uPractice;
 
 public class MethodChainInternal {
 	public static void main(String[] args) {
