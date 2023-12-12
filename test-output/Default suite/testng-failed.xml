@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.reqspecification.RequestSpecificationExample2">
+      <class name="com.jsonschemavalidate.Validate_Json_Schema">
         <methods>
-          <include name="before"/>
           <include name="test"/>
         </methods>
-      </class> <!-- com.reqspecification.RequestSpecificationExample2 -->
+      </class> <!-- com.jsonschemavalidate.Validate_Json_Schema -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

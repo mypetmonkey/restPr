@@ -27,7 +27,10 @@ public class RequestSpecificationExample {
 	
 	@Test
 	public void test2() {
-		Response resp = reqspec.get("/workspaces").then().log().all().extract().response();
+		Response resp = reqspec.get("/workspaces")
+				.then()
+				.log().all()
+				.extract().response();
 		assertThat(resp.statusCode(),is(equalTo(200)));
 		assertThat(resp.path("workspaces[0].name").toString(),equalTo("My Workspace"));
 		
