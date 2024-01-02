@@ -14,7 +14,7 @@ public class Delete_workspace {
 		.header("x-api-key","PMAK-65695e66e6daac0b110283f6-66011405379bdfb029bda9d97cfdc869ab")
 		
 		.when()
-		.delete("/workspaces/a5b64ed2-fe30-4dcf-89a9-b768d5cc5420")
+		.delete("/workspaces/be4ee965-9846-4dc2-815d-9a58802b7a27")
 		
 		.then()
 		.log().ifError()

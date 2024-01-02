@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.jsonschemavalidate.Validate_Json_Schema">
+      <class name="com.AuthorizationAndAuthentication.Sendmsg">
         <methods>
-          <include name="test"/>
+          <include name="sendTest"/>
+          <include name="configure"/>
         </methods>
-      </class> <!-- com.jsonschemavalidate.Validate_Json_Schema -->
+      </class> <!-- com.AuthorizationAndAuthentication.Sendmsg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

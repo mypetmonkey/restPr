@@ -4,6 +4,9 @@ import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
 import static org.hamcrest.Matchers.*;
+
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,11 +18,16 @@ public class Extract_Single_value {
 	@Test
 	public void test() {
 		baseURI="https://api.postman.com";
+		
 	String name=given()
 		.header("x-api-key","PMAK-65695e66e6daac0b110283f6-66011405379bdfb029bda9d97cfdc869ab")
-	.when()
+
+		
+.when()
 		.get("/workspaces")
-	.then()
+
+		
+.then()
 	.log().ifError()
 	.assertThat()
 	.statusCode(200)
@@ -27,7 +35,7 @@ public class Extract_Single_value {
 	//.response().asString();
 	.response().path("workspaces[2].name");
 	System.out.println("workspace name is "+name);
-	Assert.assertEquals(name,"myfirst");
+	Assert.assertEquals(name, "myfirst");
 	//assertThat(name, equalTo("myfirst"));
 	
 	
